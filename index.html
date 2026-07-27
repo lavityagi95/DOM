@@ -1,18 +1,48 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Mini Project</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
     <h1 id="heading">Hello JavaScript</h1>
 
-    <button id="redBtn">Red</button>
-    <button id="greenBtn">Green</button>
-    <button id="blueBtn">Blue</button>
-    <button id="randomBtn">Random Color</button>
+    <div class="buttons">
+        <button id="redBtn">Red</button>
+        <button id="greenBtn">Green</button>
+        <button id="blueBtn">Blue</button>
+        <button id="randomBtn">Random Color</button>
+    </div>
 
-    <script src="/script.js"></script>
-  </body>
+    <h1 id="heading2">Welcome</h1>
+
+    <input
+        id="nameInput"
+        type="text"
+        placeholder="Enter your name"
+    >
+
+    <button id="btn">Change Heading</button>
+
+    <textarea
+        id="message"
+        placeholder="Type your message..."
+    ></textarea>
+
+    <div class="counter">
+        <p>Characters: <span id="count">0</span></p>
+        <p>Words: <span id="wordCount">0</span></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
 </html>
