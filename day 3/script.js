@@ -7,7 +7,7 @@ AddBtn.addEventListener("click",()=>{
     
     const input = inputTask.value.trim();
     
-    if(input == ""){
+    if(input === ""){
         return;
     }
     const li = document.createElement("li")
@@ -18,22 +18,21 @@ AddBtn.addEventListener("click",()=>{
     const button =document.createElement("button")
     
     button.textContent ="done"
-    TaskList.appendChild(button);
+    li.appendChild(button);
 
     button.addEventListener("click",()=>{
-        li.style.color = "green"
+        
+        li.classList.toggle("complete")
     })
     
     const removeButton = document.createElement("button");
 
     removeButton.textContent ="remove"
-    TaskList.appendChild(removeButton)
+    li.appendChild(removeButton)
 
     removeButton.addEventListener("click",()=>{
 
-        TaskList.removeChild(li)
-        TaskList.removeChild(button)
-        TaskList.removeChild(removeButton)
+        li.remove();
     })
 
 
